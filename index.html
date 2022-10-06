@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+
+</head>
+<body>
+   
+    <header class="geral">
+
+        <h1>Lista de Compras</h1>
+        
+        <form id="formulario">
+            <label for="idProdutos">Produto: </label>
+            <input type="text" id="idProdutos" name="produtos" placeholder='Nome do Produto' required>
+            <label for="idNumero">Valor do Produto: </label>
+            <input type="text" name="numero" id="idNumero" placeholder="Valor do Produto" required>
+            <label for="idQtd">Quantidade: </label>
+            <input type="number" name="qtd" id="idQtd">
+            <button id="btnAdd" onclick="produto.adicionar()">Adicionar &#10004;</button>
+            <button id="btnExc" onclick="produto.excluir()">Deletar &#10008;</button>
+        </form>
+
+    </header>
+
+    <main class="tabela geral">
+            <table>
+                <thead>
+                        <th> </th>
+                        <th>Produtos</th>
+                        <th>Valores</th>
+                        <th>Qtd</th>
+                        <th>Total</th>
+                        <th>Ações</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Arroz</td>
+                        <td>5.90</td>
+                        <td>5</td>
+                        <td>*****</td>
+                        <td class="centro">
+                            <img src="./IMG/editar.png">
+                            <img src="./IMG/excluir.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Feijão</td>
+                        <td>7.90</td>
+                        <td>3</td>
+                        <td>*****</td>
+                        <td class="centro">
+                            <img src="./IMG/editar.png">
+                            <img src="./IMG/excluir.png">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Açucar</td>
+                        <td>3.90</td>
+                        <td>2</td>
+                        <td>*****</td>
+                        <td class="centro">
+                            <img src="./IMG/editar.png">
+                            <img src="./IMG/excluir.png">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                        <td class="colTotal" colspan="4">Total</td>
+                        <td class="colTotal">*****</td>
+                </tfoot>
+            </table>
+    </main>
+    <script src="./SCRIPT/index.js"></script>
+</body>
+</html>
