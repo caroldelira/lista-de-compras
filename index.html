@@ -16,31 +16,31 @@
         <form id="formulario">
             <label for="idProdutos">Produto: </label>
             <input type="text" id="idProdutos" name="produtos" placeholder='Nome do Produto' required>
-            <label for="idValor">Valor do Produto: </label>
-            <input type="number" name="numero" id="idValor" placeholder="Valor do Produto" required>
+            <label for="idPreco">Valor do Produto: </label>
+            <input type="text" name="numero" id="idPreco" placeholder="Valor do Produto" required>
             <label for="idQtd">Quantidade: </label>
             <input type="number" name="qtd" id="idQtd">
-            <button id="btnAdd" onclick="produto.adicionar()">Adicionar &#10004;</button>
-            <button id="btnExc" onclick="produto.cancelar()">Cancelar &#10008;</button>
+            <button id="btnAdd" type="button" onclick="produto.adicionar()">Adicionar &#10004;</button>
+            <button id="btnExc" type="button" onclick="produto.cancelar()">Cancelar &#10008;</button>
         </form>
     </header>
 
     <main class="tabela geral">
         <table>
             <thead>
-                <th> </th>
+                <th class="centro"> ID </th>
                 <th>Produtos</th>
                 <th>Valores</th>
-                <th>Qtd</th>
+                <th class="centro">Qtd</th>
                 <th>Total</th>
-                <th>Ações</th>
+                <th class="centro">Ações</th>
             </thead>
-            <tbody id="idTabelaCorpo">
+            <tbody id="tbody">
                
             </tbody>
             <tfoot>
                 <td class="colTotal" colspan="4">Total</td>
-                <td class="colTotal">*****</td>
+                <td id='total' class="colTotal">*****</td>
             </tfoot>
         </table>
     </main>
