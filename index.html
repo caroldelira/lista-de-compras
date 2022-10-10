@@ -12,23 +12,27 @@
 <section id="corpo">
     
     <header class="geral">
+        <div id="animacao">
+        <img class="imagem1" src='https://1.bp.blogspot.com/-q28AeeLys6k/W43ScrP4eJI/AAAAAAAAC7Q/gIsjX2Hq3DMjHco_at-m6enseMMMiC_ywCLcBGAs/s1600/imagem1.gif' />
         <h1>Lista de Compras</h1>
+        <img class="imagem1" src='https://1.bp.blogspot.com/-q28AeeLys6k/W43ScrP4eJI/AAAAAAAAC7Q/gIsjX2Hq3DMjHco_at-m6enseMMMiC_ywCLcBGAs/s1600/imagem1.gif' />
+        </div>
         <form id="formulario">
             <label for="idProdutos">Produto: </label>
             <input type="text" id="idProdutos" name="produtos" placeholder='Nome do Produto' required>
             <label for="idPreco">Valor do Produto: </label>
-            <input type="text" name="numero" id="idPreco" placeholder="Valor do Produto" required>
+            <input type="number" name="numero" id="idPreco" placeholder="Valor do Produto" required>
             <label for="idQtd">Quantidade: </label>
             <input type="number" name="qtd" id="idQtd">
             <button id="btnAdd" type="button" onclick="produto.adicionar()">Adicionar &#10004;</button>
             <button id="btnExc" type="button" onclick="produto.cancelar()">Cancelar &#10008;</button>
         </form>
+        
     </header>
 
     <main class="tabela geral">
         <table>
             <thead>
-                <th id="check" class="centro"></th>
                 <th class="centro"> </th>
                 <th>Produtos</th>
                 <th>Valores</th>
@@ -40,12 +44,23 @@
                
             </tbody>
             <tfoot id="tfoot">
-                <td class="colTotal" colspan="4">Total</td>
-                <td id='total' class="colTotal">R$ </td>
+                <td colspan="4">Total</td>
+                <td id='total'>R$ </td>
             </tfoot>
         </table>
+        <details id="detalhes" >
+            <p id="maiorValor" class="campo"></p>
+            <p id="menorValor" class="campo"></p>
+            <p id= "qtdProd" class="campo"></p>
+        </details>
+        <div id="divLogo">
+        <img src="./IMG/CL Branco.png" id="logo">
+        </div>
     </main>
+    
 </section>
+
+
 <script src="./SCRIPT/index.js"></script>
 </body>
 </html>

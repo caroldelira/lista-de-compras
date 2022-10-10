@@ -21,6 +21,13 @@ h1 {
   text-align: center;
   color: var(--primary-color);
   width: 100%;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+h1:hover{
+  -webkit-filter: drop-shadow(5px 3px 5px rgba(94, 94, 94, 0.5));
+  filter: drop-shadow(5px 3px 5px  rgba(94, 94, 94, 0.5));
 }
 
 .linha {
@@ -43,6 +50,38 @@ p {
   margin: 10px;
   padding: 20px;
   box-shadow: 5px 5px 20px rgb(170, 170, 170);
+}
+
+#animacao{
+  display: flex;
+  align-items: center;
+}
+
+.imagem1{
+  width: 20px;
+  transition: all 1s;
+  cursor: pointer;
+}
+
+.imagem1:hover{
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
+}
+
+#divLogo{
+  display: flex;
+  justify-content: center;
+}
+
+#logo{
+  width: 60px;
+  transition: all .5s;
+  border: 3px solid transparent;
+}
+
+#logo:hover{
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
 }
 
 /* ---- FORMULÁRIO ---- */
@@ -135,9 +174,32 @@ table td img {
 tfoot td {
   border: none;
   padding: 5px;
-}
-
-.colTotal {
   text-align: end;
   font-weight: bold;
 }
+
+#total {
+  text-align: start;
+}
+
+.verificado{
+  text-decoration: line-through;
+}
+
+/* ---- DETALHES---- */
+
+
+#detalhes{
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+
+.campo{
+  color: var(--primary-color);
+  font-size: 18px;
+  text-align: start;
+}
+
