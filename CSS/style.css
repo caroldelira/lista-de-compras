@@ -57,7 +57,7 @@ p {
   align-items: center;
 }
 
-.imagem1{
+/* .imagem1{
   width: 20px;
   transition: all 1s;
   cursor: pointer;
@@ -66,7 +66,7 @@ p {
 .imagem1:hover{
   -webkit-transform: rotateZ(360deg);
   transform: rotateZ(360deg);
-}
+} */
 
 #divLogo{
   display: flex;
@@ -75,13 +75,16 @@ p {
 
 #logo{
   width: 60px;
-  transition: all .5s;
+  transition: all 1s;
   border: 3px solid transparent;
+  margin-top: 20px;
 }
 
 #logo:hover{
   border: 3px solid var(--primary-color);
   border-radius: 50%;
+  -webkit-transform: rotateZ(360deg);
+  transform: rotateZ(360deg);
 }
 
 /* ---- FORMULÁRIO ---- */
